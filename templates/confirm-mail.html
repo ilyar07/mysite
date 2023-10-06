@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='style/confirm-mail.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='img/icon.png')}}">
+    <title>Confirm your mail</title>
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+</head>
+<body onload="changeColorInfo('info')">
+    <div id="main-container">
+        <h1>by mail<br><u>{{mail}}</u><br> an email was sent with a confirmation code</h1>
+        <form action="/confirm-mail" method="POST">
+
+            <label>Enter the code</label><br>
+            <input name="code" type="text" placeholder="Code"><br>
+
+            <input id="send" type="submit" value="Send code">
+        </form>
+
+        <button onclick="triggerButtonClick('back')"><a id="back" href="/">Back</a></button>
+        <p id="info">{{ info }}</p>
+    </div>
+
+</body>
+</html>
+

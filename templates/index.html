@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="info" content="index-page">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/index.css') }}">
+    <link rel="icon" href="{{url_for('static', filename='img/icon.png')}}">
+</head>
+<body>
+    <div id="main-container">
+        <h1>Welcome user!</h1>
+        <form action="/" method="POST">
+            <label>Your login or mail:</label><br>
+            <input name="login" type="text" placeholder="Login or mail"><br>
+
+            <label>Your password:</label><br>
+            <input name="password" type="password" placeholder="Password"><br>
+
+            <input id="send" type="submit" value="Send">
+
+        </form>
+        <button onclick="triggerButtonClick('reg-link')"><a id="reg-link" href="{{ url_for('registrarion') }}">Registration</a></button><br>
+        <button onclick="triggerButtonClick('cnange-password-link')"><a id="cnange-password-link" href="{{ url_for('select_account') }}">Forgot password?</a></button><br>
+        <p>{{error}}</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="info" content="reg-page">
+    <title>Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/reg-page.css') }}">
+    <link rel="icon" href="{{url_for('static', filename='img/icon.png')}}">
+
+</head>
+<body onload="send_mail('http://localhost/confirm-mail', 'user_mail', 'a letter with a confirmation code for registration to the site mysite.ru')">
+    <div id="main-container" onload>
+        <h1>Registration</h1>
+        <form action="/registration" method="POST">
+            <label>Сome up with a login:</label><br>
+            <input name="login" type="text" placeholder="Login"><br>
+
+            <label>Сome up with a Mail</label><br>
+            <input name="email" type="text" placeholder="Mail"><br>
+
+            <label>Сome up with a password:</label><br>
+            <input name="password" type="password" placeholder="Password" ><br>
+
+            <label>Enter the password again:</label><br>
+            <input name="copy-password" type="password" placeholder="Copy password"><br>
+
+            <input id="send" type="submit" value="Send">
+
+        </form>
+        <button onclick="triggerButtonClick('index-link')"><a id="index-link" href="/">Back</a></button>
+        <p id="error">{{error}}</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+</body>
+</html>

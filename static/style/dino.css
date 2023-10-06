@@ -1,0 +1,102 @@
+body {
+  background-image: url('/static/img/dino-fon.png');
+  background-size: cover:
+  background-repeat; no-repeat;
+}
+
+
+.game {
+  width: 800px;
+  height: 400px;
+  border-bottom: solid 1px black;
+  margin: auto;
+}
+
+#dino {
+  background-image: url('/static/img/dino.png');
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  background-size: 80px 80px;
+  top: 347px;
+}
+
+#cactus {
+  background-image: url('/static/img/cactus.png');
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  position: relative;
+  top: 275px;
+  left: 770px;
+}
+
+@keyframes Move {
+  from {
+    top: 275px;
+    left: 770px;
+  }
+  to {
+     top: 275px;
+     left: -20px;
+  }
+}
+
+.cactusMove{
+  animation: Move 1.2s linear;
+}
+
+
+.jump {
+  animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 355px;
+  }
+  50% {
+    top: 255px;
+  }
+  100% {
+    top: 355px;
+  }
+}
+
+#score{
+  width: 200px;
+  height: 50px;
+  position: relative;
+  left: 750px;
+  font-size: 50px;
+}
+
+button {
+  position: relative;
+  top: 200px;
+  left: 800px;
+  font-size: 17px;
+  width: 200px;
+  height: 40px;
+  border-radius: 30px;
+  border: 2px solid rgb(146, 24, 222);
+}
+
+button:hover {
+  cursor: pointer;
+  border: 3px solid rgb(235, 52, 195);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#record {
+  width: 300px;
+  height: 50px;
+  position: relative;
+  left: 750px;
+  font-size: 50px;
+}

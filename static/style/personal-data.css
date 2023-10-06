@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Intro';
+  src: local('Intro'),
+    url("/static/fonts/head-font.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myfont';
+  src: local('Myfont'),
+    url("/static/fonts/main-font.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    background-image: url("/static/img/personal-data-fon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main-container {
+    line-height: 60px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 100px;
+    width: 900px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #bd84e8a8;
+    position: relative;
+}
+
+td,th {
+   width: 33%;
+}
+
+.info-div {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+.info-div h1 {
+    font-family: Intro;
+    font-size: 22px;
+}
+
+.info-div p {
+    font-size: 17px;
+}
+
+button {
+    margin-left: 825px;
+    margin-top: 100px;
+    font-size: 17px;
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid rgb(146, 24, 222);
+}
+
+.info-div button {
+    margin: auto;
+    font-size: 17px;
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid rgb(146, 24, 222);
+}
+
+button:hover {
+    cursor: pointer;
+    border: 3px solid rgb(235, 52, 195);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

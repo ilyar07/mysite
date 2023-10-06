@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Intro';
+  src: local('Intro'),
+    url("/static/fonts/head-font.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myfont';
+  src: local('Myfont'),
+    url("/static/fonts/main-font.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/static/img/account-fon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#head {
+  margin-top: 0;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  line-height: 10px;
+}
+
+#zag {
+  width: 400px;
+  height: 100px;
+  margin-left: 200px;
+  font-size: 50px;
+  color: white;
+  font-family: 'Intro';
+  font-weight: 10;
+  position: relative;
+  top: 60px;
+}
+
+#nav-container {
+  width: 800px;
+  height: 200px;
+  position: absolute;
+  left: 1000px;
+  bottom: 30px;
+}
+
+.nav-button {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Intro';
+  top: 60px;
+  color: white;
+  line-height: 50px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-button:hover {
+  border: 3px solid #f01f9c;
+  cursor: pointer;
+}
+
+#game-button{
+}
+
+#personal-button{
+  left: 300px;
+}
+
+#info-button{
+  left: 600px;
+}
+
+#main-text {
+  width: 600px;
+  height: 250px;
+  margin-left: 150px;
+  margin-top: 50px;
+  color: white;
+}
+
+#main-text h1{
+  font-family: 'Myfont';
+  font-size: 50px;
+}
+
+#main-text p {
+  font-family: 'Myfont';
+  font-size: 20px;
+}
+
+#pointer {
+  text-align: center;
+  line-height: 45px;
+  border: 3px solid #f01f9c;
+  border-radius: 50px;
+  font-size: 30px;
+  font-family: 'Myfont';
+  width: 200px;
+  height: 50px;
+  color: white;
+  margin-top: 20px;
+  margin-left: 150px;
+}
+
+.change{
+  transition: 0.5s;
+}
+
+.change:hover {
+  font-size: 40px;
+  cursor: default;
+  color: #f01f9c;
+}
+
+#exit {
+    transition: 0.5s;
+    font-family: Myfont;
+    font-size: 30px;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    margin-top: 10px;
+    left: 94%;
+    margin-bottom: 0;
+    color: white;
+    cursor: pointer;
+}
+
+#exit:after {
+    content: '⍈';
+}
+
+#exit a {
+    transition: 0.5s;
+    color: white;
+    text-decoration: none;
+}
+
+#exit a:hover {
+    font-size: 35px;
+    color: #f01f9c;
+}
+
+#exit:hover {
+    font-size: 35px;
+    color: #f01f9c;
+}
+
+#table-leaders {
+    color: white;
+    position: absolute;
+    left: 1180px;
+    bottom: 150px;
+}
+
+
+#table-leaders table {
+    text-align: center;
+    font-size: 20px;
+    font-family: Myfont;
+    width: 400px;
+    height: 500px;
+}
+
+td {
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+td,th {
+   width: 33%;
+}
+
+#head-table {
+    color: #f01f9c;
+}

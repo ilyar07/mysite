@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='style/dino.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='img/dino-icon.png')}}">
+    <title>Dino Game</title>
+</head>
+<body>
+    <div class="game">
+        <div id='dino'></div>
+        <div id='cactus' class='cactusMove'></div>
+        <div id="record">Record: {{record}}</div>
+        <div id='score'>Score: 0</div>
+    </div>
+    <button onclick="triggerButtonClick('index-link')"><a id="index-link" href="/account">Back</a></button>
+
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+    <script src="{{url_for('static', filename='script/dino.js')}}"></script>
+</body>
+</html>

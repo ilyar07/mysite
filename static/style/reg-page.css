@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'Intro';
+  src: local('Intro'),
+    url("/static/fonts/head-font.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myfont';
+  src: local('Myfont'),
+    url("/static/fonts/main-font.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+  background-image: url('/static/img/fon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#main-container {
+  text-align: center;
+  margin: auto;
+  margin-top: 100px;
+  width: 500px;
+  height: 660px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #bd84e8a8;
+}
+
+h1 {
+  font-weight: 5;
+  font-family: 'Intro';
+  font-size: 50px;
+}
+
+form {
+  font-family: 'Myfont';
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+button {
+  font-size: 17px;
+  width: 200px;
+  height: 40px;
+  border-radius: 30px;
+  border: 2px solid rgb(146, 24, 222);
+}
+
+#send {
+  font-size: 17px;
+  margin-top: 30px;
+  width: 200px;
+  height: 40px;
+  border-radius: 30px;
+  border: 2px solid rgb(146, 24, 222);
+}
+
+#send:hover {
+  cursor: pointer;
+  border: 3px solid rgb(235, 52, 195);
+}
+
+button:hover {
+  cursor: pointer;
+  border: 3px solid rgb(235, 52, 195);
+}
+
+p {
+  font-family: 'Myfont';
+  color: red;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+form input:not(:last-of-type) {
+  box-shadow:0 0 15px 4px rgba(224, 70, 219, 0.5);
+  height: 30px;
+  width: 250px;
+  box-sizing: border-box;
+  padding: 10px;
+  border:0;
+  border-radius: 20px;
+}
+
+#send-code {
+  font-size: 14px;
+  width: 130px;
+}

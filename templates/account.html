@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="info" content="account-page">
+    <title>Account</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style/account.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='img/icon.png')}}">
+</head>
+<body>
+    <div id="exit" onclick="triggerButtonClick('exit-link')">
+        <a id="exit-link" href="{{url_for('index')}}">Exit</a>
+    </div>
+    <div id='head'>
+        <h1 id='zag'>My site</h1>
+        <div id="nav-container">
+
+          <div class="nav-button" id='game-button' onclick="triggerButtonClick('game-button-link')">
+            <a class="link" id="game-button-link" href="{{url_for('dino')}}">Game</a>
+          </div>
+
+          <div class="nav-button" id='personal-button' onclick="triggerButtonClick('personal-button-link')">
+            <a id="personal-button-link" class="link" href="{{url_for('personal_data')}}">personal data</a>
+          </div>
+
+          <div class="nav-button" id="info-button" onclick="triggerButtonClick('info-button-link')">
+            <a id="info-button-link" class="link" href="{{url_for('about_me')}}">about me</a>
+          </div>
+
+        </div>
+    </div>
+    <div id="main-cntainer">
+        <div id="main-text">
+            <h1>Welcome to your account</h1>
+            <p>you can find a lot of interesting things here</p>
+            <p>visit all tabs</p>
+        </div>
+
+        <div id="pointer">
+            <span class="change">P</span><span class="change">o</span><span class="change">i</span><span class="change">n</span><span class="change">t</span> <span class="change">a</span><span class="change">t</span> <span class="change">m</span><span class="change">e</span>
+        </div>
+
+        <div id="table-leaders">
+            <table>
+                <tr id="head-table">
+                    <td>Place</td>
+                    <td>Login</td>
+                    <td>Record</td>
+                </tr>
+                <tr>
+                    <td>1st place</td>
+                    <td>{{login1}}</td>
+                    <td>{{record1}}</td>
+                </tr>
+                <tr>
+                    <td>2st place</td>
+                    <td>{{login2}}</td>
+                    <td>{{record2}}</td>
+                </tr>
+                <tr>
+                    <td>3st place</td>
+                    <td>{{login3}}</td>
+                    <td>{{record3}}</td>
+                </tr>
+                <tr>
+                    <td>4st place</td>
+                    <td>{{login4}}</td>
+                    <td>{{record4}}</td>
+                </tr>
+                <tr>
+                    <td>5st place</td>
+                    <td>{{login5}}</td>
+                    <td>{{record5}}</td>
+                </tr>
+                <tr>
+                    <td>6st place</td>
+                    <td>{{login6}}</td>
+                    <td>{{record6}}</td>
+                </tr>
+                <tr>
+                    <td>7st place</td>
+                    <td>{{login7}}</td>
+                    <td>{{record7}}</td>
+                </tr>
+                <tr>
+                    <td>8st place</td>
+                    <td>{{login8}}</td>
+                    <td>{{record8}}</td>
+                </tr>
+                <tr>
+                    <td>9st place</td>
+                    <td>{{login9}}</td>
+                    <td>{{record9}}</td>
+                </tr>
+                <tr>
+                    <td>10st place</td>
+                    <td>{{login10}}</td>
+                    <td>{{record10}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+</body>
+</html>

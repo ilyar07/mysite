@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secect account</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/select-account.css') }}">
+</head>
+<body onload="send_mail('http://localhost/confirm-change-password', 'mail', 'an email with a confirmation code for changing the password on the site mysite.ru')">
+    <div id="main-container">
+        <h1>Enter the username or mail of your account</h1>
+
+        <form>
+            <label>Login or mail:</label>
+            <input type="text" name="login" placeholder="Login or mail"><br>
+
+            <input type="submit" value="Send" id="send"><br>
+        </form>
+
+        <button onclick="triggerButtonClick('back')"><a id="back" href="{{url_for('index')}}">Back</a></button>
+        <p id="error">{{error}}</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+</body>
+</html>

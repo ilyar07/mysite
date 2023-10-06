@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='style/personal-data.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='img/icon.png')}}">
+    <title>Personal data</title>
+</head>
+<body>
+    <div id="main-container">
+        <table>
+            <tr>
+                <td><div id="login" class="info-div">
+                    <h1>Your login:</h1>
+                    <p>{{login}}</p>
+                    <button onclick="triggerButtonClick('change-login-link')"><a id="change-login-link" href="{{url_for('change_login')}}">Change</a></button>
+                </div></td>
+
+                <td><div id="mail" class="info-div">
+                    <h1>Your mail:</h1>
+                    <p>{{mail}}</p>
+                    <button onclick="triggerButtonClick('change-mail-link')"><a id="change-mail-link" href="{{url_for('change_mail')}}">Change</a></button>
+                </div></td>
+
+                <td><div id="password" class="info-div">
+                    <h1>Your password(hash):</h1>
+                    <p>{{password}}</p>
+                    <button onclick="triggerButtonClick('change-password-link')"><a id="change-password-link" href="{{url_for('change_password')}}">Change</a></button>
+
+                </div></td>
+            </tr>
+        </table>
+    </div>
+    <button onclick="triggerButtonClick('account-link')"><a id="account-link" href="/account">Back</a></button>
+
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+</body>
+</html>

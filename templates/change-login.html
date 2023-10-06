@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/change-login.css') }}">
+    <link rel="icon" href="{{url_for('static', filename='img/icon.png')}}">
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+</head>
+<body onload="changeColorInfo('error')">
+    <div id="main-container">
+        <h1>Create a login</h1>
+        <form action="/change-login" method="POST">
+
+            <label>Your new login:</label><br>
+            <input name="login" type="text" placeholder="Login"><br>
+
+            <input id="send" type="submit" value="Send">
+
+        </form>
+        <button onclick="triggerButtonClick('index-link')"><a id="index-link" href="{{ url_for('index') }}">Back</a></button><br>
+        <p id="error">{{error}}</p>
+    </div>
+
+</body>
+</html>

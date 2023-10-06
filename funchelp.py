@@ -25,19 +25,6 @@ def connecttodb():
     return conn
 
 
-# def connecttodb():
-#     """Коннект с баззой данных"""
-#
-#     conn = connect(
-#         host = 'mysite2023.mysql.pythonanywhere-services.com',
-#         user = 'mysite2023',
-#         password = 'Chiter4321',
-#         database = 'mysite2023$default',
-#         cursorclass = cursors.DictCursor )
-#
-#     return conn
-
-
 ########################################################################################################################
 def get_hash(string: str) -> str:
     """Хэш-функция"""
